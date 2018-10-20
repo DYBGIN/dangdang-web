@@ -1,0 +1,42 @@
+/*通用*/
+body, ul, li, ol, p, dl, dd, h1, h2, h3, h4, h5, h6, img, iframe, form, div,a{margin:0;padding:0;
+list-style: none;border:0;text-decoration: none}
+.nav-search{height:77px}
+/*顶部*/
+.t1 tr td:first-child{padding:5px 350px 5px 0;font-size: 10px}
+.t1 tr td{font-size: 10px;padding:5px 20px}
+.t1 tr td a{font-size:10px;color:#646464;}
+.t1 tr td a:hover{color:#ff2832;text-decoration: none}
+/*顶部下拉*/
+.dropdown-menu1 li:hover,.dropdown-menu1 li a:hover{background:#dcdcdc;color:#646464 !important; }
+.dropdown-menu1{position:absolute;top:20px;z-index: 1;background: white;border:1px solid #dcdcdc;padding:3px 5px}
+.dropdown-menu1 li{padding:3px 0}
+.dropdown-menu1 tr td,.dropdown-menu1 tr td a{padding:5px 10px !important;}
+/*搜索框*/
+.nav-input{width:350px;height:40px;border:2px solid #ff2832;border-right:none;
+            padding:9px 0 9px 10px;outline:0;color:#969696;background:0;}
+.nav-pic{position: absolute;top:0;left:350px}
+.nav-search div:last-child a{display:block;border:2px solid #ff2832;width:111px;height:40px;text-align: center;line-height: 36px}
+.nav-search div:last-child a:first-child{background: #ff2832;color:white;font-weight:bold}
+.nav-search div:last-child a:first-child:hover{background:#f6f6f6;color:#646464;border-color:#dcdcdc;text-decoration: none }
+.nav-search div:last-child a:last-child{background:#f6f6f6;color:#646464;font-weight:bold;border-color:#dcdcdc  }
+.nav-search div:last-child a:last-child:hover{color:#ff2832;text-decoration: none}
+.t2{color:#323232;font-size: 14px}
+.t2 td a{color:#969696;font-size: 12px;padding:0 4px}
+/*导航栏*/
+.t3 tr td{padding:10px 10px}
+.t3 tr td a{color:#323232;font-weight: bold}
+.t3 tr td a:hover{color:#ff2832;text-decoration: none}
+.t3 tr td:first-child{padding:10px 100px 10px 10px;border:2px solid #ff2832;background: #ff2832;font-weight: bold}
+.t3 tr td:first-child a{color:white}
+.t3 tr td:first-child a:hover{text-decoration: none}
+hr{background: #ff2832;border:3px solid #ff2832}
+/*导航栏下拉*/
+.dropdown-menu2 li,.dropdown-menu2 li a{background:#f5f5f5;color:#646464 !important;padding:6px 0 5px 5px }
+/*.dropdown-menu2 li a:hover{color:#ff2832 !important;}*/
+.dropdown-menu2 li{border-right: 2px solid #ff2832;}
+.dropdown-menu2 li:hover{border:2px solid #ff2832;border-right:0;color:#ff2832 !important;}
+.select{border:2px solid #ff2832;border-right:0 !important;color:#ff2832 !important;}
+.dropdown-menu2{position: absolute;top:45px;left:-1px;width:209px;height:566px;z-index: 299;border-top:4px solid #ff2832}
+/*导航栏下拉的分类右栏*/
+.box{width:850px;height:566px;border:2px solid #ff2832;position: absolute;left:196px;top:13px;background:#f5f5f5;z-index: 199}

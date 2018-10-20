@@ -1,0 +1,25 @@
+/*字体*/
+@font-face{font-family: extra;src: url("../font/extra.ttf")}
+/*顶部背景*/
+.bg{background: url("../img/bj.jpg") no-repeat 0 0;min-height:680px;position: relative;background-size: cover;
+    background-attachment: fixed;margin-bottom: 10.6em;}
+.banner h1{padding:80px 0 160px;color:#00bdbd;}
+.bg-name{font-family:extra;text-align: center;font-size:45px;letter-spacing:4px;color:#919191;}
+.bg-job{text-align: center;font-size: 14px;color:#919191;letter-spacing:10px}
+.bg-box-contact{text-align: center;margin-top:10px}
+.bg-contact{display:inline-block}
+.bg-contact li{padding:5px 20px;float:left}
+.qq{background: url("../img/icon.png") no-repeat -70px -23px;width:36px;height:36px;text-indent:-9999px;display:block;}
+.qq:hover{background:url("../img/icon.png") no-repeat -70px -109px;width:36px;height:36px;display:block;
+           text-indent:-9999px;}
+.wechat{background: url("../img/icon.png") no-repeat -161px -30px;width:36px;height:36px;text-indent:-9999px;display:block}
+.wechat:hover{background:url("../img/icon.png") no-repeat -161px -115px;width:36px;height:36px;display:block;
+    text-indent:-9999px;}
+.sina{background: url("../img/icon.png") no-repeat -118px -29px;width:36px;height:36px;text-indent:-9999px;display:block}
+.sina:hover{background:url("../img/icon.png") no-repeat -118px -115px;width:36px;height:36px;display:block;
+    text-indent:-9999px;}
+.faceb{background: url("../img/icon.png") no-repeat -32px -25px;width:36px;height:36px;text-indent:-9999px;display:block}
+.faceb:hover{background:url("../img/icon.png") no-repeat -32px -110px;width:36px;height:36px;display:block;
+    text-indent:-9999px;}
+.self-box{background: black;margin-right:5px}
+.self-hob{background: black}

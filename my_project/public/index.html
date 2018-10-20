@@ -1,0 +1,1636 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <title></title>
+    <style>
+        [v-cloak]{display:none}
+    </style>
+</head>
+<body>
+<!--头部-->
+<header id="header" class="container"></header>
+<!--副导航-->
+<div class="subnav">
+    <div class="container">
+        <ul class="list-unstyled">
+            <li><a href="#">图书排行榜</a></li>
+            <li><a href="#">童书</a></li>
+            <li><a href="#">教辅</a></li>
+            <li><a href="#">小说</a></li>
+            <li><a href="#">文学</a></li>
+            <li><a href="#">青春文学</a></li>
+            <li><a href="#">传记</a></li>
+            <li><a href="#">成功励志</a></li>
+            <li><a href="#">管理</a></li>
+            <li><a href="#">历史</a></li>
+            <li><a href="#">哲学宗教</a></li>
+            <li><a href="#">亲子家教</a></li>
+            <li><a href="#">保健养生</a></li>
+            <li><a href="#">考试</a></li>
+            <li><a href="#">科技</a></li>
+            <li><a href="#">进口原版</a></li>
+            <li><a href="#">电子书</a></li>
+            <li><a href="#">网络文学</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container mt-3 p-0">
+    <div class="d-flex justify-content-between">
+        <div style="width:190px;height:960px">
+          <div class="flq">
+              <div class="flq-head"><span>图书分类</span></div>
+              <div class="flq-body">
+                  <!--1-->
+                  <div>
+                      <dl>
+                          <dt><span style="color:#487a6f;font-size:14px">特色书单</span></dt>
+                      </dl>
+                  </div>
+                  <!--2-->
+                  <div>
+                      <dl>
+                          <dt>
+                          <span>
+                            <a href="#">电子书</a>
+                            <a href="#">网络文学</a>
+                            <a href="#">阅读器</a>
+                          </span>
+                          </dt>
+                      </dl>
+                  </div>
+                  <!--3-->
+                  <div>
+                      <dl>
+                          <dt>
+                              <a href="#">教育</a>
+                          </dt>
+                          <dd>
+                              <a href="#">教材</a>
+                              <a href="#">| 外语</a>
+                              <a href="#">| 考试</a>
+                              <a href="#">| 中小学教辅</a>
+                              <a href="#">| 工具书</a>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--4-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">小说</a></dt>
+                      </dl>
+                  </div>
+                  <div>
+                      <dl>
+                          <dt><a href="#">文艺</a></dt>
+                          <dd><a href="#">文学</a>
+                              <a href="#">| 传记</a>
+                              <a href="#">| 艺术</a>
+                              <a href="#">| 摄影</a>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--5-->
+                  <div>
+                      <dl>
+                          <dt>
+                          <span>
+                              <a href="#">青春文学</a>
+                              <a href="#">/动漫</a>
+                              <a href="#">·幽默</a>
+                          </span>
+                          </dt>
+                      </dl>
+                  </div>
+                  <!--6-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">童书</a></dt>
+                          <dd>
+                          <span>
+                              <a href="#">0-2 |</a>
+                              <a href="#">3-6 |</a>
+                              <a href="#">7-10</a>
+                              <a href="#"> 11-14 |</a>
+                              <a href="#">科普/百科 |</a>
+                              <a href="#">绘本 |</a>
+                              <a href="#">文学 |</a>
+                              <a href="#">英语</a>
+                          </span>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--7-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">人文社科</a></dt>
+                          <dd>
+                          <span>
+                              <a href="#">历史 |</a>
+                              <a href="#">古籍 |</a>
+                              <a href="#">哲学/宗教 |</a>
+                              <a href="#">文化 |</a>
+                              <a href="#">政治/军事 |</a>
+                              <a href="#">法律 |</a>
+                              <a href="#">社会科学 |</a>
+                              <a href="#">心理学</a>
+                          </span>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--8-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">经管</a></dt>
+                          <dd>
+                          <span>
+                              <a href="#">经济</a>
+                              <a href="#">管理</a>
+                              <a href="#">投资理财</a>
+                          </span>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--9-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">成功/励志</a></dt>
+                      </dl>
+                  </div>
+                  <!--10-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">生活</a></dt>
+                          <dd>
+                          <span>
+                              <a href="#">两性 |</a>
+                              <a href="#">孕期 |</a>
+                              <a href="#">育儿 |</a>
+                              <a href="#">亲子/家教 |</a>
+                              <a href="#">保健 |</a>
+                              <a href="#">运动 |</a>
+                              <a href="#">美妆 |</a>
+                              <a href="#">手工 |</a>
+                              <a href="#">美食 |</a>
+                              <a href="#">旅游 |</a>
+                              <a href="#">休闲 |</a>
+                              <a href="#">家居 |</a>
+                              <a href="#">风水 |</a>
+                          </span>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--11-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">科技</a></dt>
+                          <dd>
+                          <span>
+                              <a href="#">科普 |</a>
+                              <a href="#">建筑 |</a>
+                              <a href="#">医学 |</a>
+                              <a href="#">计算机 |</a>
+                              <a href="#">农林 |</a>
+                              <a href="#">自然科学 |</a>
+                              <a href="#">工业</a>
+                          </span>
+                          </dd>
+                      </dl>
+                  </div>
+                  <!--12-->
+                  <div>
+                      <dl>
+                          <dt>
+                              <a href="#">英文原版书</a>
+                              <a href="#">港台图书</a>
+                          </dt>
+                      </dl>
+                  </div>
+                  <!--13-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">当当出版</a></dt>
+                      </dl>
+                  </div>
+                  <!--14-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">期刊/音像</a></dt>
+                      </dl>
+                  </div>
+                  <!--15-->
+                  <div>
+                      <dl>
+                          <dt><a href="#">创意文具</a></dt>
+                      </dl>
+                  </div>
+              </div>
+
+          </div>
+        </div>
+        <div style="width:750px;height:916px">
+            <div id="imgContainer" class="mt-0" >
+                <div v-for="item in res" v-cloak>
+                    <img :src="item.img"/>
+                </div>
+            </div>
+            <div class="new_book ml-1 mb-4">
+                <span>新书上架</span>
+            </div>
+            <div class="new_book_on" style="position:relative">
+                <ul class="new_book_on_ul">
+                    <li class="eveLi">
+                       <div v-for="(row,i) in listTemp" v-cloak>
+                           <ul class="list-unstyled products_new">
+                               <li class="" v-for="(cell,j) in row">
+                                   <a href="#" target="_blank">
+                                       <img :src="cell.pic" :alt="cell.title"/>
+                                   </a>
+                                   <p class="title">
+                                       <a href="#">{{cell.title}}</a>
+                                   </p>
+                                   <p class="author">
+                                       <span>{{cell.author}}</span>
+                                   </p>
+                                   <p class="price">
+                                       <span class="new-price">￥{{cell.new_price.toFixed(2)}}</span>
+                                       <span class="old-price">￥{{cell.old_price.toFixed(2)}}</span>
+                                   </p>
+                               </li>
+
+                           </ul>
+                       </div>
+                    </li>
+                </ul>
+                <!--左右箭头-->
+                <div class="new_book_on_l"></div>
+                <div class="new_book_on_r"></div>
+                <!--指示器-->
+
+            </div>
+        </div>
+        <!--右边上边-->
+        <div style="width:180px;height:916px">
+            <!--右上第一块-->
+            <div class="new-tai">
+                <h6>最新动态</h6>
+                <p class="pt-2"><a href="#">人生励志书，仅24小时每满100减50</a></p>
+                <p><a href=#"">仅限24小时，热门图书每满100减50</a></p>
+                <p class="pb-2"><a href="#">指尖好时光，品类日每满100减50</a></p>
+            </div>
+            <!--第二块-->
+            <div class="nb-box mt-2">
+                <div class="d-flex justify-content-between">
+                    <span>新书预售</span>
+                    <span><a href="#" style="color:#5097bc;font-size: 10px">预售更多</a></span>
+                </div>
+                <ul class="mt-2">
+                    <li v-for="item in res1" v-cloak>
+                        <a href="#"><img :src="item.pic"/></a>
+                        <p class="title2">
+                            <a href="#">{{item.title}}</a>
+                        </p>
+                        <p class="price2">
+                            <span class="new-price2">￥{{item.new_price.toFixed(2)}}</span>
+                            <span class="old-price2">￥{{item.old_price.toFixed(2)}}</span>
+                        </p>
+                    </li>
+                </ul>
+                <!--左右箭头-->
+                <div class="nb_box_l"></div>
+                <div class="nb_box_r"></div>
+            </div>
+            <!--右边第三块-->
+            <div class="book_sale mt-3">
+                <a href="#" class="book_sale_title">新书热卖榜</a>
+                <div id="my_tabs" class="mt-1">
+                    <ul class="my_tabs_title">
+                        <li class="active" ><a href="#" @mouseover.prevent="changeAindex">总榜</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">童书</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">励志</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">摄影</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">教辅</a></li>
+                    </ul>
+                    <div class="content">
+                        <div class="queryContent">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res3" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-37}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res3" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-37}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res3" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-37}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res3" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-37}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res3" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-37}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第二块内容-->
+    <div class="d-flex justify-content-between">
+        <!--独家模块-->
+        <div class="dj_tabs">
+            <!--卡片选项-->
+            <div class="dj_tabs_head">
+                <h3>独家特供</h3>
+                <ul class="dj_tabs_title">
+                    <li class="on"><a href="#">主打</a></li>
+                    <li><a href="#">童书1</a></li>
+                    <li><a href="#">童书2</a></li>
+                    <li><a href="#">文艺</a></li>
+                    <li><a href="#">小说</a></li>
+                    <li><a href="#">青春励志</a></li>
+                    <li><a href="#">社科</a></li>
+                    <li><a href="#">经管</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">电子书</a></li>
+                </ul>
+                <div class="dj_tabs_all_content">
+                    <div class="dj_tabs_content">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}1</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}2</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}3</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}4</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}5</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}6</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}7</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}8</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="dj_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res6">
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}9</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                </div>
+
+        </div>
+        <!--图书畅销榜-->
+        <div class="book_hot" style="width:180px;height:584px">
+            <!--切换书单-->
+            <div class="book_hot mt-3">
+                <a href="#" class="book_hot_title">图书畅销榜</a>
+                <div class="mt-1 ">
+                    <ul class="my_tabs_title">
+                        <li class="active"><a href="#" @mouseover.prevent="changeAindex">总榜</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">童书</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">励志</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">摄影</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">教辅</a></li>
+                    </ul>
+                    <div class="content">
+                        <div class="queryContent">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res4" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-47}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res4" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-47}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res4" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-47}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res4" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-47}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res4" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-47}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!--广告-->
+    <div class="mt-3 mb-3">
+        <ul class="ad1">
+            <li><a href="#"><img src="img/ad/ad1.jpg"/></a></li>
+            <li><a href="#"><img src="img/ad/ad2.jpg"/></a></li>
+            <li><a href="#"><img src="img/ad/ad3.jpg"/></a></li>
+        </ul>
+    </div>
+    <hr/>
+    <!--第三块-->
+    <div class="d-flex justify-content-between">
+        <!--主编推荐-->
+        <div class="zb_tabs">
+            <!--卡片选项-->
+            <div class="zb_tabs_head">
+                <h3>独家特供</h3>
+                <ul class="zb_tabs_title">
+                    <li class="on"><a href="#">主打</a></li>
+                    <li><a href="#">童书1</a></li>
+                    <li><a href="#">童书2</a></li>
+                    <li><a href="#">文艺</a></li>
+                    <li><a href="#">小说</a></li>
+                    <li><a href="#">青春励志</a></li>
+                    <li><a href="#">社科</a></li>
+                    <li><a href="#">经管</a></li>
+                    <li><a href="#">生活</a></li>
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">电子书</a></li>
+                </ul>
+                <div class="zb_tabs_all_content">
+                    <div class="zb_tabs_content">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}1</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}2</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}4</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}4</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}5</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}6</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}7</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}8</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="zb_tabs_content" style="display: none">
+                        <ul>
+                            <li v-for="item in res7" v-cloak>
+                                <a href="#" target="_blank">
+                                    <img :src="item.pic" :alt="item.title"/>
+                                </a>
+                                <p class="title4">
+                                    <a href="#">{{item.title}}</a>
+                                </p>
+                                <p class="author4">
+                                    <span>{{item.author}}9</span>
+                                </p>
+                                <p class="price4">
+                                    <span class="new-price4">￥{{item.new_price.toFixed(2)}}</span>
+                                    <span class="old-price4">￥{{item.old_price.toFixed(2)}}</span>
+                                </p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--电子书榜-->
+        <div class="book_ele" style="width:180px;height:584px">
+            <!--切换书单-->
+            <div class="book_ele mt-3">
+                <a href="#" class="book_ele_title">电子书榜</a>
+                <div class="mt-1 ">
+                    <ul class="my_tabs_title">
+                        <li class="active"><a href="#" @mouseover.prevent="changeAindex">总榜</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">奇幻</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">仙侠</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">悬疑</a></li>
+                        <li><a href="#" @mouseover.prevent="changeAindex">都市</a></li>
+                    </ul>
+                    <div class="content">
+                        <div class="queryContent">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res5" @mouseover.prevent="changeIndex(index)">
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-57}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex">
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res5" @mouseover.prevent="changeIndex(index)">
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-57}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex">
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res5" @mouseover.prevent="changeIndex(index)">
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-57}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex">
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res5" @mouseover.prevent="changeIndex(index)">
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-57}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex">
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="queryContent" style="display:none">
+                            <ul class="list-unstyled">
+                                <li class="line_bar active1" v-for="(item,index) in res5" @mouseover.prevent="changeIndex(index)" v-cloak>
+                                    <div class="d-flex" style="border-bottom:1px solid #eaeaea;padding:5px 0">
+                                        <span style="color:red;font-weight: bold;padding-left: 4px">{{item.lid-57}}</span>
+                                        <span class="ml-3 easy"><a href="#">{{item.title}}</a></span>
+                                    </div>
+                                    <div v-if="aindex==index" class="d-flex" v-cloak>
+                                        <div>
+                                            <img :src="item.pic" :alt="item.title" class="img1"/>
+                                        </div>
+                                        <div class="mt-1">
+                                            <p class="title3"><a href="#">{{item.title}}</a></p>
+                                            <p class="new-price3">￥{{item.new_price.toFixed(2)}}</p>
+                                            <p class="old-price3">￥{{item.old_price.toFixed(2)}}</p>
+                                            <p class="comment">{{item.comment}}条评论</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--第四块-->
+    <div class="d-flex justify-content-between">
+        <div class="sel_author">
+            <!--作者选项卡-->
+            <div class="sel_author_head">
+                <ul>
+                    <li class="live"><span>热门作者</span></li>
+                    <li><span>名人堂</span></li>
+                    <li><span>新锐作家</span></li>
+                </ul>
+            </div>
+            <!--选项卡对应的内容-->
+            <div class="sel_author_body_all">
+                <div class="sel_author_body">
+                    <div class="sel_author_body_left">
+                        <div class="introduction">
+                            <ul>
+                                <li>
+                            <span class="num_logo">
+                                1
+                                <span>st</span>
+                            </span>
+                                    <a href="#"><img :src="author[0].pic" :title="author[0].name"  v-cloak/></a>
+                                    <p class="sel_author_body_name" v-cloak>{{author[0].name}}</p>
+                                    <p class="sel_author_body_detail" v-cloak>{{author[0].detail}}</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="zuopin">
+                            <span>作品</span>
+                        </div>
+                        <div class="sel_author_body_work mt-3">
+                            <ul>
+                                <li v-for="item in work.slice(0,4)" v-cloak>
+                                    <a href="#" target="_blank">
+                                        <img :src="item.pic" :alt="item.title"/>
+                                    </a>
+                                    <p class="title5">
+                                        <a href="#">{{item.title}}</a>
+                                    </p>
+                                    <p class="star mt-2">
+                                        <span></span>
+                                    </p>
+                                    <p class="price5 mt-2">
+                                        <span class="new-price5">￥{{item.new_price.toFixed(2)}}</span>
+                                        <span class="old-price5">￥{{item.old_price.toFixed(2)}}</span>
+                                    </p>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sel_author_body_right">
+                        <ul>
+                            <li v-for="item in author.slice(3)" v-cloak>
+                                <span class="number">{{item.aid-3}}</span>
+                                <p class="author6"><a href="#">{{item.name}}</a></p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--名人堂模块-->
+                <div class="sel_author_body" style="display:none">
+                    <div class="sel_author_body_left2">
+                        <ul>
+                            <li>
+                                <a href="#"><img :src="author[1].pic" :title="author[1].name" v-cloak/></a>
+                                <p class="author7"><a href="#" v-cloak>{{author[1].name}}</a></p>
+                                <p class="sel_author_body_detail2">
+                                    <span v-cloak>{{author[1].detail}}</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sel_author_body_right2">
+                        <div class="above">
+                            <ul>
+                                <li v-for="item1 in work.slice(4,5)" v-cloak>
+                                    <a href="#" class="img2"><img :src="item1.pic" :alt="item1.title" :title="item1.title" v-cloak/></a>
+                                    <p class="title6"><a href="#" v-cloak>{{item1.title}}</a></p>
+                                    <p class="star"><span></span></p>
+                                    <p class="price6 mt-2">
+                                        <span class="new-price6" v-cloak>￥{{item1.new_price.toFixed(2)}}</span>
+                                        <span class="old-price6" v-cloak>￥{{item1.old_price.toFixed(2)}}</span>
+                                    </p>
+                                    <p class="sel_author_body_detail3">
+                                        <span v-cloak>
+                                            {{item1.detail}}
+                                        </span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="under">
+                            <div class="other_book">
+                                <span>该作者的其他作品:</span>
+                                <ul>
+                                    <li><p><a href="#">在宇宙间不易被风吹散</a></p></li>
+                                    <li><p><a href="#">不三</a></p></li>
+                                    <li><p><a href="#">冯唐文集</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="other_book">
+                                <span>该作者推荐的图书:</span>
+                                <ul>
+                                    <li><p><a href="#">人生因孤独而丰盛</a></p></li>
+                                    <li><p><a href="#">四时之诗</a></p></li>
+                                    <li><p><a href="#">于丹 重温最美古诗词</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="other_book">
+                                <span>喜欢该作者还喜欢:</span>
+                                <ul>
+                                    <li><p><a href="#">镜湖</a></p></li>
+                                    <li><p><a href="#">唐诗可以这样读</a></p></li>
+                                    <li><p><a href="#">孤独是灵魂的必修课</a></p></li>
+                                    <li><p><a href="#">那年 那信</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--新锐作家-->
+                <div class="sel_author_body" style="display:none">
+                    <div class="sel_author_body_left2">
+                        <ul>
+                            <li>
+                                <a href="#"><img :src="author[2].pic" :title="author[2].name" v-cloak/></a>
+                                <p class="author7"><a href="#" v-cloak>{{author[2].name}}</a></p>
+                                <p class="sel_author_body_detail2">
+                                    <span v-cloak>{{author[2].detail}}</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sel_author_body_right2">
+                        <div class="above">
+                            <ul>
+                                <li v-for="item2 in work.slice(5)" v-cloak>
+                                    <a href="#" class="img2"><img :src="item2.pic" :alt="item2.title" :title="item2.title"/></a>
+                                    <p class="title6"><a href="#">{{item2.title}}</a></p>
+                                    <p class="star"><span></span></p>
+                                    <p class="price6 mt-2">
+                                        <span class="new-price6">￥{{item2.new_price.toFixed(2)}}</span>
+                                        <span class="old-price6">￥{{item2.old_price.toFixed(2)}}</span>
+                                    </p>
+                                    <p class="sel_author_body_detail3">
+                                        <span>
+                                            {{item2.detail}}
+                                        </span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="under">
+                            <div class="other_book">
+                                <span>该作者的其他作品:</span>
+                                <ul>
+                                    <li><p><a href="#">让孩子像孩子那样长大（亲笔签名版）</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="other_book">
+                                <span>该作者推荐的图书:</span>
+                                <ul>
+                                    <li><p><a href="#">养育女孩</a></p></li>
+                                    <li><p><a href="#">养育男孩(典藏版)</a></p></li>
+                                    <li><p><a href="#">通往幸福的教育</a></p></li>
+                                    <li><p><a href="#">法国妈妈育儿经</a></p></li>
+                                </ul>
+                            </div>
+                            <div class="other_book">
+                                <span>喜欢该作者还喜欢:</span>
+                                <ul>
+                                    <li><p><a href="#">给孩子的未来脑计划</a></p></li>
+                                    <li><p><a href="#">养育的选择</a></p></li>
+                                    <li><p><a href="#">天才赢在注意力</a></p></li>
+                                    <li><p><a href="#">写给父母的未来之书</a></p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad2">
+            <ul>
+                <li><a href="#"><img src="img/ad/ad3.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="img/ad/ad4.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="img/ad/ad5.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="img/ad/ad6.jpg" alt=""/></a></li>
+                <li><a href="#"><img src="img/ad/ad7.jpg" alt=""/></a></li>
+            </ul>
+        </div>
+    </div>
+    <hr/>
+    <!--广告-->
+    <div mt-3 mb-3>
+        <ul class="ad1">
+            <li><a href="#"><img src="img/ad/ad10.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/ad/ad9.jpg" alt=""/></a></li>
+            <li><a href="#"><img src="img/ad/ad8.jpg" alt=""/></a></li>
+        </ul>
+    </div>
+    <hr/>
+    <!--第五块-->
+    <div class="reader">
+        <!--左边-->
+        <div class="reader_left">
+            <div class="reader_left_box">
+                <div class="reader_left_head">
+                    <h3>读者推荐</h3>
+                    <ul>
+                        <li class="happen">好评最多</li>
+                        <li>最受关注</li>
+                        <li>人气收藏</li>
+                    </ul>
+                </div>
+                <div class="reader_left_tj_all">
+                    <!--好评最多-->
+                    <div class="reader_left_tj">
+                        <div>
+                            <!--上半部分-->
+                            <ul class="reader_left_first">
+                                <li>
+                                    <span class="number">1.</span>
+                                    <a href="#"><img :src="reader[0].pic" :alt="reader[0].title" v-cloak/></a>
+                                    <p class="title7">
+                                        <a href="#" v-cloak>{{reader[0].title}}</a>
+                                    </p>
+                                    <p class="star">
+                                        <span></span>
+                                    </p>
+                                    <p class="price">
+                                        <span class="new-price">
+                                            <span>当当价:</span>
+                                            <span v-cloak>￥{{reader[0].new_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="old-price">
+                                            <span>市场价:</span>
+                                            <span v-cloak>￥{{reader[0].old_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="ele-price">
+                                            <span>电子书:</span>
+                                            <span v-cloak>￥{{reader[0].ele_price.toFixed(2)}}}</span>
+                                        </span>
+                                    </p>
+                                    <p class="detail" v-cloak>{{reader[0].detail}}</p>
+                                </li>
+                            </ul>
+                            <!--下半部分-->
+                            <div class="reader_left_second">
+                                <div class="reader_left_btnl"></div>
+                                <div class="reader_left_btnr"></div>
+                                <div class="reader_left_bbx">
+                                    <ul class="reader_left_bbx_list">
+                                        <li class="reader_left_bbx_list_line" v-for="(row,i) in listTemp" v-cloak>
+                                            <ul>
+                                                <li class="text-center" v-for="(cell,j) in row" v-cloak>
+                                                    <span class="number">{{cell.lid-96}}.</span>
+                                                    <a href="#"><img :src="cell.pic" :alt="cell.title"/></a>
+                                                    <p class="title">
+                                                        <a href="#">{{cell.title}}</a>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span></span>
+                                                    </p>
+                                                    <p class="price mt-2">
+                                                        <span class="new-price">￥{{cell.new_price.toFixed(2)}}</span>
+                                                        <span class="old-price">￥{{cell.old_price.toFixed(2)}}</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--最受关注-->
+                    <div style="display: none" class="reader_left_tj">
+                        <div>
+                            <!--上半部分-->
+                            <ul class="reader_left_first">
+                                <li>
+                                    <span class="number">1.</span>
+                                    <a href="#"><img :src="reader[1].pic" :alt="reader[1].title" v-cloak/></a>
+                                    <p class="title7">
+                                        <a href="#" v-cloak>{{reader[1].title}}</a>
+                                    </p>
+                                    <p class="star">
+                                        <span></span>
+                                    </p>
+                                    <p class="price">
+                                        <span class="new-price">
+                                            <span>当当价:</span>
+                                            <span v-cloak>￥{{reader[1].new_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="old-price">
+                                            <span>市场价:</span>
+                                            <span v-cloak>￥{{reader[1].old_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="ele-price">
+                                            <span>电子书:</span>
+                                            <span v-cloak>￥{{reader[1].ele_price.toFixed(2)}}</span>
+                                        </span>
+                                    </p>
+                                    <p class="detail" v-cloak>{{reader[1].detail}}</p>
+                                </li>
+                            </ul>
+                            <!--下半部分-->
+                            <div class="reader_left_second">
+                                <div class="reader_left_btnl"></div>
+                                <div class="reader_left_btnr"></div>
+                                <div class="reader_left_bbx">
+                                    <ul class="reader_left_bbx_list">
+                                        <li class="reader_left_bbx_list_line" v-for="(row,i) in listTemp" v-cloak>
+                                            <ul>
+                                                <li class="text-center" v-for="(cell,j) in row" v-cloak>
+                                                    <span class="number">{{cell.lid-96}}.</span>
+                                                    <a href="#"><img :src="cell.pic" :alt="cell.title"/></a>
+                                                    <p class="title">
+                                                        <a href="#">{{cell.title}}</a>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span></span>
+                                                    </p>
+                                                    <p class="price mt-2">
+                                                        <span class="new-price">￥{{cell.new_price.toFixed(2)}}</span>
+                                                        <span class="old-price">￥{{cell.old_price.toFixed(2)}}</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--人气收藏-->
+                    <div style="display: none" class="reader_left_tj">
+                        <div>
+                            <!--上半部分-->
+                            <ul class="reader_left_first">
+                                <li>
+                                    <span class="number">1.</span>
+                                    <a href="#"><img :src="reader[2].pic" alt="reader[2].title" v-cloak/></a>
+                                    <p class="title7">
+                                        <a href="#" v-cloak>{{reader[2].title}}</a>
+                                    </p>
+                                    <p class="star">
+                                        <span></span>
+                                    </p>
+                                    <p class="price">
+                                        <span class="new-price">
+                                            <span>当当价:</span>
+                                            <span v-cloak>￥{{reader[2].new_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="old-price">
+                                            <span>市场价:</span>
+                                            <span v-cloak>￥{{reader[2].old_price.toFixed(2)}}</span>
+                                        </span>
+                                        <span class="ele-price">
+                                            <span>电子书:</span>
+                                            <span v-cloak>￥{{reader[2].ele_price.toFixed(2)}}</span>
+                                        </span>
+                                    </p>
+                                    <p class="detail" v-cloak>{{reader[2].detail}}</p>
+                                </li>
+                            </ul>
+                            <!--下半部分-->
+                            <div class="reader_left_second">
+                                <div class="reader_left_btnl"></div>
+                                <div class="reader_left_btnr"></div>
+                                <div class="reader_left_bbx">
+                                    <ul class="reader_left_bbx_list">
+                                        <li class="reader_left_bbx_list_line" v-for="(row,i) in listTemp" v-cloak>
+                                            <ul>
+                                                <li class="text-center" v-for="(cell,j) in row" v-cloak>
+                                                    <span class="number">{{cell.lid-96}}.</span>
+                                                    <a href="#"><img :src="cell.pic" :alt="cell.title"/></a>
+                                                    <p class="title">
+                                                        <a href="#">{{cell.title}}</a>
+                                                    </p>
+                                                    <p class="star">
+                                                        <span></span>
+                                                    </p>
+                                                    <p class="price mt-2">
+                                                        <span class="new-price">￥{{cell.new_price.toFixed(2)}}</span>
+                                                        <span class="old-price">￥{{cell.old_price.toFixed(2)}}</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右边-->
+        <div class="reader_right">
+            <a href="#" class="reader_right_sq"></a>
+            <h2>山月不知心里事</h2>
+            <a href="#" class="sq_activity_title">女人，要做自己的靠山。除了自己，依靠谁，都有风险</a>
+            <div class="sq_activity_img"><img src="img/reader/rb23.jpg" alt="山月不知心里事"/></div>
+            <a href="#" class="sq_activity_body">本书为长篇纪实小说，以在大别山里长大的米燕的生活经历为基础，写了一群山里女孩的命运。每一个人，都是一个故事；每一个故事，都是一本书。米燕就是一个普通的不能再普通的人，她的故事，或许有你我的影子。</a>
+            <div class="sq_activity_buttons">
+                <a href="#" class="button1">电子书</a>
+                <a href="#" class="button2">客户端</a>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <!--第六块-->
+    <div class="book_wp">
+        <ul class="book_wp_list">
+            <li v-for="item in ad" v-cloak><a href="#"><img :src="item.pic" alt=""/></a></li>
+        </ul>
+    </div>
+    <!--第七块-->
+    <div class="book_brand">
+        <h2 class="book_brand_head">品牌店铺</h2>
+        <div class="book_brand_body">
+            <div class="body_part">
+                <ul>
+                    <li><a href="#">凤凰含章官方旗舰店</a></li>
+                    <li><a href="#">白马时光</a></li>
+                </ul>
+                <a href="#" class="body_part_img"><img src="img/brand/br1.jpg" alt=""/></a>
+            </div>
+            <div class="body_part">
+                <ul>
+                    <li><a href="#">耕林图书馆</a></li>
+                    <li><a href="#">爱心树童话</a></li>
+                </ul>
+                <a href="#" class="body_part_img"><img src="img/brand/br2.jpg" alt=""/></a>
+            </div>
+            <div class="body_part">
+                <ul>
+                    <li><a href="#">新蕾出版社</a></li>
+                    <li><a href="#">蒲公英图书馆</a></li>
+                </ul>
+                <a href="#" class="body_part_img"><img src="img/brand/br3.jpg" alt=""/></a>
+            </div>
+            <div class="body_part">
+                <ul>
+                    <li><a href="#">双螺旋童书馆</a></li>
+                    <li><a href="#">歪歪兔童书馆</a></li>
+                </ul>
+                <a href="#" class="body_part_img"><img src="img/brand/br4.jpg" alt=""/></a>
+            </div>
+            <div class="body_part" style="border-right:0">
+                <ul>
+                    <li><a href="#">皮皮鲁总动员</a></li>
+                    <li><a href="#">乐乐趣童书馆</a></li>
+                </ul>
+                <a href="#" class="body_part_img"><img src="img/brand/br5.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+    <div><a href="#"><img src="img/ad/ad11.jpg" alt="" class="w-100"/></a></div>
+</div>
+<!--尾部-->
+<footer id="footer"></footer>
+<script src="js/imgSwitch.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        new imgSwitch("imgContainer",{
+            Type:12,
+            Width:750,
+            Height:315,
+            Pause:4000,
+            Speed:"fast",
+            Auto:true,
+            Navigate:"numberic",
+            NavigatePlace:"outer",
+            PicturePosition:"left"})
+    }
+
+</script>
+<script>
+
+
+</script>
+</body>
+</html>

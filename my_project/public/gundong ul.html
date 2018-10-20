@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+ 
+<script type="text/javascript" src="js/jquery-3.2.0.js"></script>
+<script type="text/javascript" >
+	$(function () {
+    //定义变量
+    var page = 1;
+    var i = 4;
+    //选择图片
+    var len = $(".prolist_content ul li").length;
+    //定义滚动的个数
+    var page_count = Math.ceil(len / i);
+    //获取图片滚动的高度
+    var none_unit_width = $(".prolist").width();
+    var $parent = $(".prolist_content");
+    //点击右边按钮  注册单击事件
+    $(".goRight").click(function () {
+        //判断临界值
+        if (page == page_count) {
+            $parent.animate({ left: 0 }, 1000);
+            page = 1;
+        } else {
+            //定义动画
+            $parent.animate({ left: "-=" + none_unit_width }, 1000);
+            page++;
+        }
+    });
+    $(".goLeft").click(function () {
+        //调用is方法
+        if (!$parent.is(":animated")) {
+            if (page == 1) {
+                $parent.animate({ left: "-=" + none_unit_width * (page_count - 1) }, 1000);
+                page = page_count;
+            } else {
+                $parent.animate({ left: "+=" + none_unit_width }, 1000)
+                page--;
+            }
+        }
+    });
+</script>
+ 
+ 
+<style type="text/css">
+	.prolist { 
+	position:relative; 
+	height: 220px;
+	margin-bottom:10px; 
+	overflow:hidden; 
+	border: 1px solid #AAAAAA;
+	background:#FFFFFF;
+}
+.prolist .prolist_content{
+ 	position:absolute; 
+	width:1800px;
+	top:26px; 
+	left:0px;
+	padding:20px 0 0 8px;
+}
+.prolist ul{  
+	margin-bottom:10px; 
+    float:left;
+	height: 220px;
+}
+.prolist ul li { 
+	float:left;
+	display:inline;
+	text-align:center;
+	margin-right:22px;  
+}
+.content_right .prolist ul li span { 
+	display:block;
+	overflow:hidden; 
+}
+.prolist ul li img { 
+	display:block; 
+	width:124px; 
+	height:124px; 
+	background:#EEE; border:0;
+}
+.module_left_right{ 
+	position:absolute; 
+	top:5px; 
+	right:10px; 
+	cursor:pointer;
+}
+
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<div class="prolist">
+                <h3>新款上市</h3>
+                <div class="prolist_content">
+                    <ul>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_1.jpg" title="免烫高支棉衬衣" alt="假装有图片" /></a><span>免烫高支棉衬衣1</span><span>$120.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_2.jpg" alt="" /></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_3.jpg" alt="" /></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_4.jpg" alt="" /></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_1.jpg" alt="" /></a><span>免烫高支棉衬衣2</span><span>$120.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_2.jpg" alt="" /></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_3.jpg" alt="" /></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_4.jpg" alt="" /></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_1.jpg" alt="" /></a><span>免烫高支棉衬衣3</span><span>$120.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_2.jpg" alt="" /></a><span>免烫斜纹衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_3.jpg" alt="" /></a><span>棉小方格正装衬衣</span><span>$129.00</span>
+                        </li>
+                        <li>
+                            <a href="detail.html">
+                                <img src="images/img_4.jpg" alt="" /></a><span>小米兰格衬衣蓝色</span><span>$129.00</span>
+                        </li>
+                    </ul>
+                </div>
+                <p class="module_left_right">
+                    <img class="goLeft" src="images/left.gif" alt="" /><img class="goRight" src="images/right.gif" alt="" />
+                </p>
+            </div>
+
+</body>
+
+</html>

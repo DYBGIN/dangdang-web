@@ -1,0 +1,23 @@
+#footer .footer_content{border-top: 2px solid #ff2832;margin-top: 15px;background-color: #fff;clear: both}
+#footer .footer_content .footer_pic{background-color: #fafafa;border-bottom: 1px solid #ebebeb;width: 100%;min-width: 960px}
+#footer .footer_content .footer_inner{width: 940px;margin: 0 auto;height: 68px;padding: 5px 0 5px 30px;display: flex;justify-content: space-between}
+#footer .footer_content .footer_inner a{display: block;height: 52px;width: 187px;padding: 7px 0 7px 48px;}
+#footer .footer_content .footer_inner a span{text-indent: -9999px;display: block;width: 138px;height: 52px;font-size: 0;
+    line-height: 0;cursor: pointer}/*background: url(http://img61.ddimg.cn/upload_img/00660/home/footer_bg.png) 0 0 no-repeat;*/
+#footer .footer_content .footer_inner a .s1{background: url("../img/footer/footer_bg.png") 0 0 no-repeat}
+#footer .footer_content .footer_inner a .s2{background: url("../img/footer/footer_bg.png") 0 -52px no-repeat}
+#footer .footer_content .footer_inner a .s3{background: url("../img/footer/footer_bg.png") 0 -104px no-repeat}
+#footer .footer_content .footer_inner a .s4{background: url("../img/footer/footer_bg.png") 0 -157px no-repeat}
+#footer .footer_new{width: 920px;height: 140px;margin: 0 auto;padding-top: 30px;display: flex;justify-content: space-between}
+#footer .footer_new .footer_nvice{width: 154px;text-align: center}
+#footer .footer_new .footer_title{display: block;padding-left: 30px;font-size: 14px;color: #323232;height: 36px;line-height: 36px;}
+#footer .footer_new .footer_ul{padding-left: 30px;list-style: none;margin: 0}
+#footer .footer_new .footer_ul li{line-height:20px;height:20px}
+#footer .footer_new .footer_ul li a{color:#7d7d7d;font-size: 12px;text-decoration: none}
+#footer .footer_end{padding:17px 0 50px;width:100%;border-top:1px solid #ebebeb;margin-top:20px}
+#footer .footer_end .footer_nav{text-align: center;line-height: 20px;padding-bottom: 17px}
+#footer .footer_end .footer_nav a{color:#8c8c8c;text-decoration: none;font-size: 12px}
+#footer .footer_end .footer_nav span{margin:0 17px 0 19px}
+#footer .footer_end .footer_copyright{line-height: 20px;text-align: center;width: 960px;margin: 0 auto}
+#footer .footer_end .footer_copyright a{padding: 0 4px;color: #8c8c8c;font-size: 12px;text-decoration: none}
+#footer .footer_end .footer_copyright span{font-size:12px;color:#8c8c8c}

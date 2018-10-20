@@ -1,0 +1,14 @@
+.register_head{height:60px;margin:12px auto 14px}
+.register_body{background: url("../img/header/login.jpg") center center no-repeat;height:590px}
+.register_body .set_area{float: right;width: 380px;color: #6e6e6e;margin: 90px auto 0;position: relative;border: 1px solid #eef2f4;
+    box-shadow: 0px 1px 2px #eee;}
+.register_body .set_area h2{font-size:18px;color:#3c3c3c;margin-top:5px;margin-left:5px}
+.register_body .set_area .title{font-size:14px;width:338px;padding-right:10px;text-align: center;vertical-align: top;
+   color:#646464;padding-top:8px;}
+.register_body .set_area .text{border:1px solid #e6e6e6;height:36px;float:left;width:290px;margin-right:10px;padding:9px 10px;
+   line-height: 18px;outline: none;border-radius: 5px;color:#333}
+.register_body .set_area p{display:block;line-height: 14px;padding:5px 4px;margin-right: 5px;font-size:12px;text-align: center}
+.register_body .set_area .btn1{background:#0084F7;outline:0;border:0;font-weight: 700;border-radius: 5px;width:140px;height:36px}
+.register_body .set_area .btn1 a,.register_body .set_area .btn2 a{color:white;text-decoration: none}
+.register_body .set_area .btn2{background:#d72832;outline:0;border:0;font-weight: 700;border-radius: 5px;width:140px;height:36px;
+  margin-bottom:10px}
