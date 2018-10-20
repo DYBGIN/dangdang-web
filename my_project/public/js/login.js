@@ -29,6 +29,7 @@ $(function(){
         e.preventDefault();
         user=$user.val();
         upwd=$upwd.val();
+        sessionStorage.setItem("user",user);
         $.ajax({
             url:"http://127.0.0.1:3000/login/test",
             type:"post",

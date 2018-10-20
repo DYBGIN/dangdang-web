@@ -1,0 +1,18 @@
+/****左边图片****/
+.detail_pic{float:left;width:320px;padding:0 20px 0 30px;}
+.detail_pic #mask{width:140px; height:140px;background-color:pink;opacity:.5;}
+#superMask{width:320px; height:320px;}
+.detail_pic .md_pic{width:320px;height:320px;margin:0 auto;position:relative;z-index: 1}
+.detail_pic .md_pic .img{display:block;width:320px;height:320px;overflow: hidden}
+.detail_pic .md_pic .img img{width:320px}
+.detail_pic .md_pic .lg_pic{border:1px solid #f5f5f5;position:absolute;left:320px;top:0;width:400px;height:400px;overflow: hidden}
+.detail_pic .sm_pic{visibility: visible;overflow: hidden;position: relative;z-index: 2;left: 0px;width: 295px}
+.detail_pic .sm_pic ul{z-index: 1;position: relative;width: 380px;}
+.detail_pic .sm_pic ul li{overflow: hidden;float:left;width:56px;height:56px;margin-right: 3px}
+.detail_pic .sm_pic ul .on{border:1px solid #f5f5f5}
+.detail_pic .sm_pic .pic_l{width: 20px;height: 20px;background:#c8c8c8 url("../img/header/l1.png") center center no-repeat;
+    position: absolute;left: 0;top: 47%;margin-top: -5px;z-index: 2;cursor: pointer;border-radius: 50%}
+.detail_pic .sm_pic .pic_l:hover{background:#487a6f url("../img/header/l1.png") center center no-repeat}
+.detail_pic .sm_pic .pic_r{width: 20px;height: 20px;background:#c8c8c8 url("../img/header/r1.png") center center no-repeat;
+    position: absolute;right: 0;top: 47%;margin-top: -5px;z-index: 2;cursor: pointer;border-radius: 50%}
+.detail_pic .sm_pic .pic_r:hover{background:#487a6f url("../img/header/r1.png") center center no-repeat}

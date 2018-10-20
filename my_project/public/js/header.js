@@ -9,6 +9,13 @@ $(function(){
                $(res).replaceAll("#header")
             }
         })
+        
+        var $td=$(".t1 #td1");
+        var uname=sessionStorage.getItem("user");
+        if(uname){
+            var html=`欢迎回来${uname}&nbsp;&nbsp;&nbsp;<a href="http://127.0.0.1:3000/logout.html">退出</a>`;
+            $td.html(html)
+        }
 
         $(document).ready(function(){
             $("#header .dropdown-menu1").hide()

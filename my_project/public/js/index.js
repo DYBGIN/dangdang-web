@@ -226,7 +226,7 @@ $(document).ready(function(){
     var $fullWidth=$(".new_book_on .new_book_on_ul");
     var $eveWidth=$(".new_book_on .new_book_on_ul .eveLi div").width();
     var $length=$fullWidth.find("li.eveLi div").length;
-    console.log($length)
+    //console.log($length)
     var i=0;
     var $next=$(".new_book_on .new_book_on_r");
     var $prev=$(".new_book_on .new_book_on_l");
