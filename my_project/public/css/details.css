@@ -16,3 +16,66 @@
 .detail_pic .sm_pic .pic_r{width: 20px;height: 20px;background:#c8c8c8 url("../img/header/r1.png") center center no-repeat;
     position: absolute;right: 0;top: 47%;margin-top: -5px;z-index: 2;cursor: pointer;border-radius: 50%}
 .detail_pic .sm_pic .pic_r:hover{background:#487a6f url("../img/header/r1.png") center center no-repeat}
+
+/****右边详细****/
+.detail_show{float:left;width:630px;margin-left:85px}
+.detail_show .detail_show_left{width:630px;float:left}
+.detail_show .detail_show_left .name{border-bottom:1px solid #ccc;padding:0 6px 12px 0}
+.detail_show .detail_show_left .name h1.title{line-height:24px;max-height:48px;overflow: hidden;color:#323232;font-size:18px;margin:0 auto;font-weight: bold}
+.detail_show .detail_show_left .name h2.subtitle{padding-top:15px;max-height:110px;overflow: hidden;font-size: 16px;line-height: 24px}
+.detail_show .detail_show_left .name h2.subtitle a{color:#1a66b3}
+.detail_show .detail_show_left .publish{margin-top:15px}
+.detail_show .detail_show_left .publish .author,.detail_show .detail_show_left .publish .pub_house,.detail_show .detail_show_left .publish .pub_time{display:inline-block;padding-right:25px;font-size:14px}
+.detail_show .detail_show_left .publish a{color:#1a66b3}
+.detail_show .detail_show_left .price{background: #ebebeb;padding:0 0 10px 10px;margin:15px 0 0 0px;line-height:28px;position:relative;width:630px}
+.detail_show .detail_show_left .price .new_price{font-size:26px;color:#e52222;float: left;height:56px;overflow: hidden;padding:3px 5px 0 0}
+.detail_show .detail_show_left .price .new_price p:first-child{color:#8f8f8f;font-size: 12px !important;font-weight: normal !important;}
+.detail_show .detail_show_left .price .new_price p:last-child span:first-child{font-size: 14px;}
+.detail_show .detail_show_left .price .old_price{padding-top:32px;font-size: 12px;color:gray}
+.detail_show .detail_show_left .price .old_price span:first-child{margin-left:50px}
+.detail_show .detail_show_left .price .old_price span:last-child{text-decoration: line-through}
+.detail_show .detail_show_left .number{margin-top:15px}
+.detail_show .detail_show_left .number input{width:30px;height:30px;color:gray;text-align: center;border-radius: 5px;border:1px solid #ccc}
+.detail_show .detail_show_left .number button:first-child,.detail_show .detail_show_left .number button:last-child{width:30px;height:30px;background: #FF2832;font-size:18px;border:none;color:#fff;border-radius: 5px;cursor: pointer}
+.detail_show .detail_show_left .number button:first-child:hover,.detail_show .detail_show_left .number button:last-child:hover{background: #f00000}
+.detail_show .detail_show_left .buy{margin-top: 15px}
+.detail_show .detail_show_left .buy .btn1{background: #FF2832;border:0;border-radius: 5px;padding:5px 10px;color:#fff;font-weight: 700;text-align: center;cursor: pointer}
+.detail_show .detail_show_left .buy .btn1:hover{background: #f00000}
+.detail_show .detail_show_left .buy .btn2{background: #FFEDEE;border:1px solid #FF2832;border-radius: 5px;padding:5px 10px;color:#FF2832;font-weight: 700;text-align: center;cursor: pointer;margin-left: 20px}
+.detail_show .detail_show_left .buy .btn2:hover{background: #FFD7D7}
+
+/****购买过的......****/
+.also_left ul li{height:240px;text-align: center;border:1px solid #ccc;padding:20px;margin-bottom: 10px}
+.also_left ul li .price{color:#FF2832;font-weight: bold}
+.also_left ul li .title{font-weight: 600;width:280px;height:50px;overflow: hidden}
+.also_left ul li .author{color:#c8c8c8;font-size: 14px}
+.also_buy{padding-bottom:30px;margin-top:20px}
+.also_buy h3{width:750px;height:22px;border-bottom:1px solid #323232;position:relative;text-align: center;font-size: 16px}
+.also_buy h3 .title{color:#323232;display: inline-block;text-align: center;background: #fff;position: relative;bottom:-9px;padding:0 12px}
+.new_book_on{width:750px;height:530px;overflow: hidden;}
+.new_book_on ul{display: flex;transition: all .8s }
+.new_book_on_ul .eveLi{display: flex}
+.new_book_on_l{width: 25px;height: 50px;background:#c8c8c8 url("../img/header/left.png") center center no-repeat;position: absolute;
+    left: 0;top: 37%;margin-top: 10px;z-index: 99;cursor: pointer;}
+.new_book_on_l:hover{background:#487a6f url("../img/header/left.png") center center no-repeat }
+.new_book_on_r:hover{background:#487a6f url("../img/header/right.png") center center no-repeat }
+.new_book_on_r{width: 25px;height: 50px;background:#c8c8c8 url("../img/header/right.png") center center no-repeat;position: absolute;
+    right: 0;top: 37%;margin-top: 10px;z-index: 99;cursor: pointer;}
+.new_book{color:#487a6f;border-bottom: 1px solid #487a6f;width:750px;font-weight: bold}
+.products_new{display:flex;justify-content: space-between;flex-wrap: wrap;width:750px}
+.products_new li{width:150px;height:250px;margin-right: 37px;margin-bottom: 26px;}
+.products_new li .title{height:18px;line-height: 18px;overflow: hidden;text-align: center;width:108px;margin:0 auto}
+.products_new li .title a{color:#323232;font-size:12px;}
+.products_new li .title a:hover{color:orange}
+.products_new li .author{height: 24px;line-height: 24px;overflow: hidden;color: #aaa;font-size:12px;text-align: center}
+.products_new li .price{height:16px;line-height: 16px;overflow: hidden;text-align: center;font-size: 14px}
+.products_new li .price .new-price{color:red;font-weight: bold}
+.products_new li .price .old-price{color:#aaa;text-decoration: line-through}
+
+.desc_title ul{border-bottom:1px solid #323232;height:24px}
+.desc_title .desc_k{display:none;width:210px;float:left;padding:8px 0 0 20px;height:24px;overflow: hidden}
+.desc_title ul li{float:left;height:24px;padding:1px 30px 0;color:#969696;overflow:hidden;cursor: pointer}
+.desc_title ul li.hover{border:1px solid #323232;border-bottom:0;padding:0 29px 1px;margin-bottom: -1px;position:relative;background: #fff;color:#ff2832}
+.desc_content_all{border-right:1px solid #e1e1e1;width:750px;padding-right:20px;position:relative;}
+.desc_content_all ul{width:750px;padding:0 22px 0 0;margin-top:10px}
+.desc_content_all ul li{float:left;font-size:12px;padding-left:30px;width:330px;line-height: 22px;height:22px;color:#323232}

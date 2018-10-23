@@ -4,6 +4,7 @@ const session=require("express-session");
 const index=require("./routes/index");
 const login=require("./routes/login");
 const register=require("./routes/register");
+const details=require("./routes/details");
 
 var app=express();
 var server=app.listen(3000);
@@ -19,3 +20,4 @@ app.use(session({
 app.use("/index",index);
 app.use("/login",login);
 app.use("/register",register);
+app.use("/details",details);
