@@ -53,7 +53,7 @@ $(function(){
                 }
                 return arrTemp;
             }
-        },
+        }
 
     })
     /*新书热销榜 */
