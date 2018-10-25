@@ -1,0 +1,21 @@
+.aside{width:280px;margin-top:10px}
+.aside .aside_list li{text-align: center;border:1px solid #ccc;padding:10px 20px;}
+.aside .aside_list li .title{width:240px;height:45px;overflow: hidden}
+.aside .aside_list li .title a{color:#333}
+.aside .aside_list li .title a:hover{color:orange}
+.aside .aside_list li .author{width:240px;height:20px;overflow: hidden;margin-top:5px;color:#ccc;font-size:14px}
+.aside .aside_list li .price{width:240px;height:20px;overflow: hidden;margin-top:5px;color:#FF2832;font-size:14px;font-weight: 700}
+.aside .aside_list li .btn1{padding:5px 10px;border:0;border-radius: 10px;background: #FF2832;color:white;font-weight: 700;margin-top:5px;cursor: pointer}
+.aside .aside_list li .btn2{padding:5px 10px;border:1px solid #FF2832;border-radius: 10px;background: #FFEDEE;color:#FF2832;font-weight: 700;margin-top:5px;cursor: pointer}
+
+.aside_right{width:800px;}
+.aside_right ul{display:flex;justify-content: space-between;flex-wrap: wrap}
+.aside_right ul li{width:180px;height:203px;border:1px solid #ccc;padding:5px 5px;margin-top:10px;text-align: center;transition: all .2s linear;position: relative;overflow: hidden}
+.aside_right ul li:hover{transform: translateY(-5px);box-shadow: 1px 1px 5px #ccc}
+.aside_right ul li .title{font-size:13px;font-weight: 700;height:20px;overflow: hidden;margin-top:5px}
+.aside_right ul li .title a{color:#333}
+.aside_right ul li .title a:hover{color:orange}
+.aside_right ul li .author{font-size: 12px;color:#ccc;height:20px;overflow: hidden;margin-top:5px}
+.aside_right ul li .price{color:#FF2832;font-weight: 700;font-size:14px}
+.aside_right ul li .box{width:50px;height:203px;background:#ff6700;position:absolute;left:0;top:0;border:0}
+.aside_right ul li .box .btn1{width:30px;height:30px;border-radius: 5px;background: black;border:0}

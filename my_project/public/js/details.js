@@ -2,7 +2,7 @@ $(function(){
     (async function(){
         if(location.search.indexOf("lid=")!=-1){
             var lid=location.search.split("=")[1];
-            console.log(lid)
+            //console.log(lid)
             var res=await $.ajax({
                 url:"http://127.0.0.1:3000/details/details",
                 type:"get",
@@ -15,7 +15,18 @@ $(function(){
         new Vue({
             el:".detail_show",
             data:{
-                res
+                res,
+                num:1
+            },
+            methods:{
+                goSub(){
+                    if(this.num<=1){return}
+                    this.num=this.num-1
+                },
+                goAdd(){
+                    if(this.num>=99){return}
+                    this.num=this.num+1
+                }
             }
             
         })
@@ -63,7 +74,7 @@ $(function(){
         })
         if(location.search.indexOf("lid=")!=-1){
             var lid=location.search.split("=")[1];
-            console.log(lid)
+            //console.log(lid)
             var res4=await $.ajax({
                 url:"http://127.0.0.1:3000/details/details",
                 type:"get",
@@ -84,14 +95,14 @@ $(function(){
         /*小中大图片*/
         if(location.search.indexOf("lid=")!=-1){
             var lid=location.search.split("=")[1];
-            console.log(lid)
+            //console.log(lid)
             var res5=await $.ajax({
                 url:"http://127.0.0.1:3000/details/alsoI",
                 type:"get",
                 data:`lid=${lid}`,
                 dataType:"json"
             })
-            console.log(res5)
+            //console.log(res5)
         }
        
         new Vue({
@@ -101,21 +112,118 @@ $(function(){
             }
             
         })
+
+        // /*评论表*/ 
+        if(location.search.indexOf("lid=")!=-1){
+            var lid=location.search.split("=")[1];
+            //console.log(lid)
+            var p = new Promise((resolve,reject)=>{
+                 var comment=$.ajax({
+                        url:"http://127.0.0.1:3000/details/comment",
+                        type:"get",
+                        data:`lid=${lid}`,
+                        dataType:"json"
+                    })
+                   
+                    resolve(comment);
+            })
+           }
+    p.then((res)=>{
+        //console.log(res.data);
+        
+        new Vue({
+            el:"#comment",
+            data:{
+                comment:res.data,
+                msg:"",
+                pageIndex:0
+            },
+            methods:{
+                postComment(){
+                    //发表评论
+                    var username="匿名用户"; //用户名
+                    //console.log(lid)
+                    var bid=lid;      
+                    var content=this.msg;  //双向绑定留言内容
+                    //console.log(content)
+                    //对留言内容验证大于2
+                    //console.log(username+":"+nid+":"+content)
+                    var url="details/saveComment";
+                    var obj={bid:bid,content:content,username:username};
+                    $.ajax({
+                        url:url,
+                        type:"post",
+                        data:obj
+                    }).then(result=>{
+                        //console.log(1111)    
+                        if(result.code==1){
+                            
+                            //1.添加完成清空原有内容
+                            this.msg="";
+                            //2.提示
+                           // Toast(result.body.msg);
+                            this.pageIndex=0;  //将当前页码清零
+                            this.comment=[];      //数据值清空
+                            this.getCommentList();//加载第一页
+                        }//else{
+                        //     Toast(result.body.msg)
+                        // }
+                    })
+
+
+
+                },
+                getCommentList(){
+                    //当前页+1
+                    this.pageIndex++;
+                    //url地址
+                    console.log(lid)
+                    var url="details/comment?lid="+lid;
+                       url+="&pno="+this.pageIndex;
+                    //console.log("1111"+this.comment)
+                    $.ajax({
+                            url:url,
+                            type:"get",
+                            dataType:"json",
+                            // success:function(res){
+                                
+                            //     //this.comment=res.data;
+                            //     // this.comment=this.comment.concat(res.data)
+                            // }
+                        }).then(res=>{  //相当于success  因为在ajax中访问不到this.comment，所以用.then
+                            //console.log(res);
+                            //console.log(this.comment)
+                            this.comment=res.data;
+                            //console.log("2222"+this.comment)
+                        })
+                }
+            },
+            mounted(){
+                this.getCommentList();
+                //console.log(213)
+            }
+            
+        })
+     }) 
+       
+
         /*小图片切换*/
         var fullWidth=$(".detail_pic .sm_pic ul");
         var $next=$(".detail_pic .sm_pic .pic_r");
         var $prev=$(".detail_pic .sm_pic .pic_l");
-        var i=0,LIWIDTH=56;
+        var $length=fullWidth.width();
+        //console.log($length)
+        var i=0,LIWIDTH=59;
         $next.click(function(){
             //console.log(1)
             var $next=$(this);
             if(!$next.is(".disabled")){
-                console.log(2)
+                //console.log(2)
                 i++;
                 fullWidth.css("marginLeft",-LIWIDTH*i);
                 $prev.removeClass("disabled");
                 if(fullWidth.children().length-5==i){
-                    //console.log(1)
+                    //console.log()
                     $next.addClass("disabled")
                 }
                 
@@ -188,6 +296,14 @@ $(document).ready(function(){
         i=$length-1;
         var p=i*(-$eveWidth);
         $fullWidth.css({transform:'translate('+ p +'px)'})
+    })
+})
+
+/*评论选项卡切换 */
+$(document).ready(function(){
+    $(".desc_title li").click(function(){
+        $(this).addClass("hover").siblings().removeClass("hover");
+        $(".desc_content_all").children().eq($(this).index()).show().siblings(".desc_detail").hide();
     })
 })
     })()
