@@ -5,6 +5,7 @@ const index=require("./routes/index");
 const login=require("./routes/login");
 const register=require("./routes/register");
 const details=require("./routes/details");
+const book=require("./routes/book");
 
 var app=express();
 var server=app.listen(3000);
@@ -21,3 +22,4 @@ app.use("/index",index);
 app.use("/login",login);
 app.use("/register",register);
 app.use("/details",details);
+app.use("/book",book);

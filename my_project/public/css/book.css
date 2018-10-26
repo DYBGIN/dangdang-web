@@ -9,13 +9,21 @@
 .aside .aside_list li .btn2{padding:5px 10px;border:1px solid #FF2832;border-radius: 10px;background: #FFEDEE;color:#FF2832;font-weight: 700;margin-top:5px;cursor: pointer}
 
 .aside_right{width:800px;}
-.aside_right ul{display:flex;justify-content: space-between;flex-wrap: wrap}
-.aside_right ul li{width:180px;height:203px;border:1px solid #ccc;padding:5px 5px;margin-top:10px;text-align: center;transition: all .2s linear;position: relative;overflow: hidden}
-.aside_right ul li:hover{transform: translateY(-5px);box-shadow: 1px 1px 5px #ccc}
-.aside_right ul li .title{font-size:13px;font-weight: 700;height:20px;overflow: hidden;margin-top:5px}
-.aside_right ul li .title a{color:#333}
-.aside_right ul li .title a:hover{color:orange}
-.aside_right ul li .author{font-size: 12px;color:#ccc;height:20px;overflow: hidden;margin-top:5px}
-.aside_right ul li .price{color:#FF2832;font-weight: 700;font-size:14px}
-.aside_right ul li .box{width:50px;height:203px;background:#ff6700;position:absolute;left:0;top:0;border:0}
-.aside_right ul li .box .btn1{width:30px;height:30px;border-radius: 5px;background: black;border:0}
+.aside_right ul#purchase{display:flex;justify-content: space-between;flex-wrap: wrap}
+.aside_right ul#purchase li{width:180px;height:203px;border:1px solid #ccc;padding:5px 5px;margin-top:10px;text-align: center;transition: all .2s linear;position: relative;overflow: hidden}
+.aside_right ul#purchase li:hover{transform: translateY(-5px);box-shadow: 1px 1px 5px #ccc}
+.aside_right ul#purchase li .title{font-size:13px;font-weight: 700;height:20px;overflow: hidden;margin-top:5px}
+.aside_right ul#purchase li .title a{color:#333}
+.aside_right ul#purchase li .title a:hover{color:orange}
+.aside_right ul#purchase li .author{font-size: 12px;color:#ccc;height:20px;overflow: hidden;margin-top:5px}
+.aside_right ul#purchase li .price{color:#FF2832;font-weight: 700;font-size:14px}
+.aside_right ul#purchase li .box{width:50px;height:203px;background:#FF2832;position:absolute;left:-50px;top:0;border:0;display: flex;flex-direction: column;justify-content: space-around;border-top-right-radius:10px;border-bottom-right-radius: 10px;transition: all 1s linear;}
+.aside_right ul#purchase li .box .btn1{width:30px;height:60px;border-radius: 10px;border:0;margin:0 auto;background: #fff url(../img/header/gouwuche.png) center center no-repeat;cursor: pointer}
+.aside_right ul#purchase li .box .btn2{width:30px;height:60px;border-radius: 10px;background:white url(../img/header/buy.png) center center no-repeat;border:0;margin:0 auto;cursor: pointer}
+
+#page{display:flex;justify-content: flex-end;margin-top:10px}
+#page li{margin-left:3px}
+#page li a.active{background:#FFEDEE;color:#FF2832;border:1px solid #FF2832}
+#page li a.not_p{background:blue;color:#FFEDEE;border:1px solid #FFEDEE}
+#page li a{border:0;background: #FF2832;color:white;border-radius: 5px;cursor: pointer;display: inline-block;padding:5px;border-radius:5px}
+#page li a:hover{text-decoration: none}

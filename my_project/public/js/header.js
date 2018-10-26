@@ -6,7 +6,21 @@ $(function(){
             type:"get",
             success:function(res){
                //console.log(res)
-               $(res).replaceAll("#header")
+               $(res).replaceAll("#header");
+               var $search=$(".nav-search .nav-pic img");
+               console.log(1)
+               var $input=$(".nav-search .nav-input");
+               $search.click(function(){
+                   location.href=`http://127.0.0.1:3000/book.html?kw=${$input.val().trim()}`
+               })
+               $input.keyup(function(e){
+                   if(e.keyCode==13)
+                   $search.click()
+               })
+               if(location.search.indexOf("kw")!=-1){
+                   var kw=location.search.split("=")[1];
+                   $input.val(decodeURI(kw))
+               }
             }
         })
         
